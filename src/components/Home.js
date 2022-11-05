@@ -5,7 +5,7 @@ import { doc, getDoc, setDoc } from "firebase/firestore";
 import { nanoid } from "nanoid";
 import { signOut } from "firebase/auth";
 
-const { Title } = Typography;
+const { Title, Paragraph, Text, Link } = Typography;
 
 function Home(props) {
   const [merchantId, setMerchantId] = useState(undefined);
@@ -85,8 +85,32 @@ function Home(props) {
     </Button>
   );
 
+  const merchantInstructions = merchantId ? (
+    <div style={{ marginTop: "20px" }}>
+      <Paragraph>
+        To activate xPay on Shopify, please enable a <Link href="https://help.shopify.com/en/manual/payments/manual-payments#create-a-custom-manual-payment-method">Custom Manual Payment Method</Link>.
+      </Paragraph>
+      <Paragraph>
+        Call the payment method <Text strong>xPay</Text> and paste these instructions for your customers to follow:
+      </Paragraph>
+      <Paragraph strong>
+        Thank you for choosing to pay with xPay! Please navigate to <Link href={`https://xpay.com/?merchantId=${merchantId}`}>https://xpay.com/?merchantId={merchantId}</Link> to complete your payment. 
+      </Paragraph>
+      <Paragraph strong>
+        Once you are on xPay, please correctly enter the USD amount of the item that you just purchased. If you do not enter the correct amount, your order will not be processed.
+      </Paragraph>
+      <Paragraph strong>
+        Then, navigate through the payment flow to complete your transaction. Thank you!
+      </Paragraph>
+    </div>
+  ) : <></>;
+
   return (
     <div className="home-page">
+      <div style={{ display: "flex", alignItems: "center", marginBottom: "15px" }}>
+        <Title level={2}>Hello {props.user.email}</Title>
+        <Button style={{ marginLeft: "auto" }} onClick={handleSignOut}>Sign Out</Button>
+      </div>
       <Title level={2}>{merchantIdMessage}</Title>
       {genIdButton}
       <div style={{ display: "flex" }}>
@@ -105,7 +129,7 @@ function Home(props) {
           Update
         </Button>
       </div>
-      <Button style={{ width: "100%", marginTop: "30px" }} onClick={handleSignOut}>Sign Out</Button>
+      {merchantInstructions}
     </div>
   );
 }
