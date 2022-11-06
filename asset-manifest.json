@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/xpay-merchant-ui/static/css/main.cebfd8c6.css",
-    "main.js": "/xpay-merchant-ui/static/js/main.6dc45d8c.js",
+    "main.js": "/xpay-merchant-ui/static/js/main.033b72fc.js",
     "static/js/787.ad5fafa2.chunk.js": "/xpay-merchant-ui/static/js/787.ad5fafa2.chunk.js",
     "index.html": "/xpay-merchant-ui/index.html",
     "main.cebfd8c6.css.map": "/xpay-merchant-ui/static/css/main.cebfd8c6.css.map",
-    "main.6dc45d8c.js.map": "/xpay-merchant-ui/static/js/main.6dc45d8c.js.map",
+    "main.033b72fc.js.map": "/xpay-merchant-ui/static/js/main.033b72fc.js.map",
     "787.ad5fafa2.chunk.js.map": "/xpay-merchant-ui/static/js/787.ad5fafa2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cebfd8c6.css",
-    "static/js/main.6dc45d8c.js"
+    "static/js/main.033b72fc.js"
   ]
 }
