@@ -96,7 +96,7 @@ function Home(props) {
         Call the payment method <Text strong>xPay</Text>.
       </Paragraph>
       <Paragraph>
-        In the "Additional details" section, paste the following: <Text strong>Pay with Crypto - Supports any token!</Text>
+        In the "Additional details" section, paste the following: <Text strong>Pay with crypto (experimental). You can pay in ETH, SOL, MATIC, USDC, USDT and more. Note: you need metamask or a similar wallet... and some experience.</Text>
       </Paragraph>
       <Paragraph>
         In the "Payment instructions" section, paste the following:
