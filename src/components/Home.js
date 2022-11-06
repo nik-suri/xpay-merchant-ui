@@ -91,7 +91,13 @@ function Home(props) {
         To activate xPay on Shopify, please enable a <Link href="https://help.shopify.com/en/manual/payments/manual-payments#create-a-custom-manual-payment-method">Custom Manual Payment Method</Link>.
       </Paragraph>
       <Paragraph>
-        Call the payment method <Text strong>xPay</Text> and paste these instructions for your customers to follow:
+        Call the payment method <Text strong>xPay</Text>.
+      </Paragraph>
+      <Paragraph>
+        In the "Additional details" section, paste the following: <Text strong>Pay with Crypto - Supports any token!</Text>
+      </Paragraph>
+      <Paragraph>
+        In the "Payment instructions" section, paste the following:
       </Paragraph>
       <Paragraph strong>
         Thank you for choosing to pay with xPay! Please navigate to <Link href={`https://xpay.com/?merchantId=${merchantId}`}>https://xpay.com/?merchantId={merchantId}</Link> to complete your payment. 
