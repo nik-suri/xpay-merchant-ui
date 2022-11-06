@@ -21,6 +21,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "homepage": "https://nik-suri.github.io/xpay-merchant-ui",
   "eslintConfig": {
     "extends": [
       "react-app",
