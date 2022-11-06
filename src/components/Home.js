@@ -85,7 +85,7 @@ function Home(props) {
     </Button>
   );
 
-  const merchantXPayUrl = merchantId ? `http://xpay-ui.s3-website-us-east-1.amazonaws.com/#/?merchantId=${merchantId}` : "";
+  const merchantXPayUrl = merchantId ? `https://nik-suri.github.io/xpay-ui/#/?merchantId=${merchantId}` : "";
 
   const merchantInstructions = merchantId ? (
     <div style={{ marginTop: "20px" }}>
