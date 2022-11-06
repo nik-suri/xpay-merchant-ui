@@ -100,10 +100,10 @@ function Home(props) {
         In the "Payment instructions" section, paste the following:
       </Paragraph>
       <Paragraph strong>
-        Thank you for choosing to pay with xPay! Please navigate to <Link href={`https://xpay.com/?merchantId=${merchantId}`}>https://xpay.com/?merchantId={merchantId}</Link> to complete your payment. 
+        Thank you for choosing to pay with xPay! Please navigate to <Link href={`https://xpay.com/?merchantId=${merchantId}`}>http://xpay-ui.s3-website-us-east-1.amazonaws.com/#/?merchantId={merchantId}</Link> to complete your payment. 
       </Paragraph>
       <Paragraph strong>
-        Once you are on xPay, please correctly enter the USD amount of the item that you just purchased. If you do not enter the correct amount, your order will not be processed.
+        Once you are on xPay, please correctly enter the USD amount of the item that you just purchased and the order ID that you see above. If you do not enter the correct amount or order ID, your order will not be processed.
       </Paragraph>
       <Paragraph strong>
         Then, navigate through the payment flow to complete your transaction. Thank you!
